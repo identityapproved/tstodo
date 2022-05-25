@@ -43,3 +43,48 @@ box-shadow: 0 0 10px rgb(230, 123, 233)
    transform: scale(0.92);
    box-shadow: 0 0 5px rgb(230, 123, 233)
 }
+
+.todos {
+   display: flex;
+   flex-wrap: wrap;
+   width: 90%;
+   justify-content: space-evenly;
+}
+
+.todos__single {
+   display: flex;
+   width: 29.5%;
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 15px;
+   background-color: white;
+}
+
+.todos__single--text {
+   flex: 1;
+   padding: 5px;
+   border: none;
+   /* font-size: 23px; */
+}
+
+.todos__single--text:focus {
+   outline: none;
+}
+
+.icon {
+   margin-left: 10px;
+   font-size: 23px;
+   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+   .input {
+      width: 92%;
+   }
+   .todos {
+      width: 92%;
+   }
+   .todos__single {
+      width: 92%;
+   }
+}
